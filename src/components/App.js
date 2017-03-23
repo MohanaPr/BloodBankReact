@@ -11,8 +11,6 @@ var cc = ""
 class App extends Component {
     constructor(props) {
         super(props);
-        console.log(this.props.location)
-
     }
     render() {
         console.log(this.props.location.pathname)
@@ -21,19 +19,19 @@ class App extends Component {
             cc = (
                 <Carousel>
                     <Carousel.Item>
+                        <img width={1200} height={2000} alt="" src="images/1.jpg"/>
+                        <Carousel.Caption></Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img width={1200} height={2000} alt="" src="images/2.jpg"/>
+                        <Carousel.Caption></Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img width={1200} height={2000} alt="" src="images/3.jpg"/>
+                        <Carousel.Caption></Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
                         <img width={1200} height={2000} alt="" src="images/4.jpg"/>
-                        <Carousel.Caption></Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width={1200} height={2000} alt="" src="images/5.jpg"/>
-                        <Carousel.Caption></Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width={1200} height={2000} alt="" src="images/6.jpg"/>
-                        <Carousel.Caption></Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width={1200} height={2000} alt="" src="images/7.jpg"/>
                         <Carousel.Caption></Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -43,7 +41,7 @@ class App extends Component {
         }
         return (
             <div className="container">   
-                     <h1 className="text-center" style={{color:' #cc0000'}}>BloodBank</h1 >
+                     <h1 className="text-center" style={{color:'#cc0000'}}>BloodBank</h1 >
                 <ul className="nav nav-pills nav-justified">
                     <li className="nav-item">
                         <Link to="/about">About</Link>
